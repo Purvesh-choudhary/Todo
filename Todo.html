@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TO DO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="background-color: rgb(195, 209, 218);">
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 id="title">Tasks</h1>
+
     <div id="appBox">
-        <h1>To-do</h1>
-        <!-- <div id="todoBox"> -->
-            <ul id="list-container">
-                <!-- <li>t1</li>
-                <li>tt2</li>
-                <li>t3</li> -->
-            </ul>
-        <!-- </div> -->
-        <!-- <div id="completedBox">
-            <h1>Completed</h1>
-            <ul id="completedlist">
-            </ul>
-        </div> -->
+      <h1>To-do</h1>
+      <ul id="list-container"></ul>
     </div>
 
-        <div id="addItemOverlayBG" onclick="DisableOverlay()"></div>
+    <div id="addItemOverlayBG" onclick="disableOverlay()"></div>
 
-        <div id="addItemOverlay">
-            <input type="text" placeholder="Add Your text" id="input-Box">
-            <button id="addItemBox" onclick="AddTask()">Add Task</button>
-        </div>
+    <div id="addItemOverlay">
+      <input type="text" placeholder="Add Your text" id="input-Box" />
+      <button id="addItemBox" onclick="addTask()">Add Task</button>
+    </div>
 
-
-        <button id="EnableOverlayBtn" onclick="EnableOverlay()">+</button>
-
+    <button id="EnableOverlayBtn" onclick="enableOverlay()">+</button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
